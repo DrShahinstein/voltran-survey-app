@@ -1,0 +1,43 @@
+/* index.css */
+
+body {
+  font-family: "Inter", sans-serif !important;
+  background-color: #f4f4f4;
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.poll-container {
+  min-width: 550px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.poll-container i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.poll-container--footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: solid rgb(187, 184, 184) 1.5px;
+}
+
+.correlation-form {
+  margin-top: 35px;
+}
+
+.inner-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

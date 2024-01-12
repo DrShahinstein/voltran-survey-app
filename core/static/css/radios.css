@@ -1,0 +1,66 @@
+/* radios.css */
+
+.radio-span {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 180ms ease-in-out;
+}
+
+.radio-disabled {
+  opacity: 0.9;
+}
+
+.radio-agree {
+  border: solid #33a474 2px;
+}
+.radio-agree-selected {
+  background-color: #33a474;
+}
+.radio-agree:hover {
+  background-color: #33a474;
+}
+
+.radio-disagree {
+  border: solid #f03d3d 2px;
+}
+.radio-disagree-selected {
+  background-color: #f03d3d;
+}
+.radio-disagree:hover {
+  background-color: #f03d3d;
+}
+
+.radio-neutral {
+  border: solid #9b9faa 2px;
+}
+.radio-neutral-selected {
+  background-color: #9b9faa;
+}
+.radio-neutral:hover {
+  background-color: #9b9faa;
+}
+
+.radio-span:nth-child(even) {
+  margin-left: 1.1rem;
+  margin-right: 1.1rem;
+}
+
+.radio-span:first-child {
+  margin-right: 1.5rem;
+}
+
+.radio-span:last-of-type {
+  margin-left: 1.5rem;
+}
+
+.radio-span.scale-1 {
+  transform: scale(1.35);
+}
+
+.radio-span.scale-2 {
+  transform: scale(1.8);
+}
