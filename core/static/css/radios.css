@@ -1,5 +1,11 @@
 /* radios.css */
 
+.radio-span-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .radio-span {
   display: inline-block;
   width: 28px;
@@ -63,4 +69,18 @@
 
 .radio-span.scale-2 {
   transform: scale(1.8);
+}
+
+.radio-annotation {
+  font-weight: bold;
+}
+
+#radio-annotation-agree {
+  color: #33a474;
+  margin-right: 1rem;
+}
+
+#radio-annotation-disagree {
+  color: #f03d3d;
+  margin-left: 1rem;
 }
