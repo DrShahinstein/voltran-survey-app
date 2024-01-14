@@ -1,6 +1,6 @@
 # Self Django Polls
 
-A survey application whose answers are based on [likert scale](https://www.scribbr.com/methodology/likert-scale/) (agree/disagree out of five) and primarily developed for [Team Voltran 2023](https://www.instagram.com/fll_voltran/), which competes in the First Lego League 2023-2024 challenge. For their innovative projects, they're going to survey people on the street and collect data on Jan 20, 2024. Good luck to them all!
+A survey application whose answers are based on [likert scale](https://www.scribbr.com/methodology/likert-scale/) (agree/disagree out of five) and primarily developed for [Team Voltran 2023](https://www.instagram.com/fll_voltran/), which competes in the [First Lego League 2023-2024 challenge](https://www.first-lego-league.org/en/2023-24-season/the-masterpiece-season). For their innovative projects, they're going to survey people on the street and collect data on Jan 20, 2024. Good luck to them all!
 
 ## Local Installation
 
