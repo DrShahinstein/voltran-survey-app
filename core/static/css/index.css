@@ -10,6 +10,11 @@ body {
   height: 100vh;
 }
 
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
 .poll-container {
   min-width: 550px;
   background-color: #fff;
