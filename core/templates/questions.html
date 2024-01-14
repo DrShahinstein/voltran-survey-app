@@ -1,40 +1,43 @@
 {% extends "base.html" %} {% block content %}
 
-<div class="poll-container" id="question-{{ question.pk }}">
+<div class="poll-container" id="question-{{ current_id }}">
   <div class="poll-container--title">
     <h2 id="h2-question">{{ question }}</h2>
   </div>
 
-  <form class="correlation-form" method="post">
+  <form
+    class="correlation-form"
+    action="{% url 'question-view' pk=current_id %}"
+    method="post"
+  >
     {% csrf_token %}
 
-    <input type="hidden" name="question_text" value="{{ question }}" />
     <input type="hidden" name="selected_answer" id="input-selected-answer" />
 
     <div class="inner-form">
       <div class="radio-span-container">
         {% for i, radio_type in scale_order %}
         <span
-          class="radio-span radio-{{ radio_type }} scale-{{ i }} radio-{{ question.pk }}"
+          class="radio-span radio-{{ radio_type }} scale-{{ i }} radio-{{ forloop.counter0 }}"
         >
         </span>
         {% endfor %}
       </div>
       <button class="radio-submit-btn btn btn-success" type="submit">
-        <a href="{% url 'question-view' pk=question.pk|add:1 %}"> Bitti </a>
+        Bitti
       </button>
     </div>
   </form>
 
   <div class="poll-container--footer">
     <span>
-      <a href="{% url 'question-view' pk=question.pk|add:-1 %}">
+      <a href="{% url 'question-view' pk=prev_id %}">
         <i class="fa-solid fa-arrow-left"></i>
       </a>
     </span>
 
     <span>
-      <a href="{% url 'question-view' pk=question.pk|add:1 %}">
+      <a href="{% url 'question-view' pk=next_id %}">
         <i class="fa-solid fa-arrow-right"></i>
       </a>
     </span>
