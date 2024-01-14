@@ -16,12 +16,18 @@
 
     <div class="inner-form">
       <div class="radio-span-container">
+        <span class="radio-annotation" id="radio-annotation-agree">
+          Katılıyorum
+        </span>
         {% for i, radio_type in scale_order %}
         <span
           class="radio-span radio-{{ radio_type }} scale-{{ i }} radio-{{ forloop.counter0 }}"
         >
         </span>
         {% endfor %}
+        <span class="radio-annotation" id="radio-annotation-disagree">
+          Katılmıyorum
+        </span>
       </div>
       <button class="radio-submit-btn btn btn-success" type="submit">
         Bitti
