@@ -1,18 +1,34 @@
 {% extends "base.html" %} {% block content %}
 
-<div>
+<div class="results-container">
   {% for q in questions %}
-  <div class="mb-5">
-    <h3 class="results-header">
-      <span class="results-header--root">Soru:</span>
-      <span class="">{{ q.question }}</span>
-    </h3>
-    <div>
-      <div>Bu soruya kesinlikle katılanların sayısı: {{ q.overall_strongly_agree_answers }}</div>
-      <div>Bu soruya katılanların sayısı: {{ q.overall_agree_answers }}</div>
-      <div>Bu soruya nötr olanların sayısı: {{ q.overall_neutral_answers }}</div>
-      <div>Bu soruya katılmayanların sayısı: {{ q.overall_disagree_answers }}</div>
-      <div>Bu soruya kesinlikle katılmayanların sayısı: {{q.overall_strongly_disagree_answers }}
+  <div class="result">
+    <h1 class="result-header">
+      <span class="result-header--root">Soru:</span>
+      <span class="result-header--question">{{ q.question }}</span>
+    </h1>
+    <div class="result-body">
+      <div class="result-strongly-agree">
+        Bu soruya kesinlikle katılanların sayısı:
+        <span class="result-value">{{ q.overall_strongly_agree_answers }}</span>
+      </div>
+      <div class="result-agree">
+        Bu soruya katılanların sayısı:
+        <span class="result-value">{{ q.overall_agree_answers }}</span>
+      </div>
+      <div class="result-neutral">
+        Bu soruya nötr olanların sayısı:
+        <span class="result-value">{{ q.overall_neutral_answers }}</span>
+      </div>
+      <div class="result-disagree">
+        Bu soruya katılmayanların sayısı:
+        <span class="result-value"> {{ q.overall_disagree_answers }}</span>
+      </div>
+      <div class="result-strongly-disagree">
+        Bu soruya kesinlikle katılmayanların sayısı:
+        <span class="result-value">
+          {{q.overall_strongly_disagree_answers }}</span
+        >
       </div>
     </div>
   </div>
