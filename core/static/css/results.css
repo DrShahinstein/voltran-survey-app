@@ -1,0 +1,48 @@
+.results-container {
+  height: 100vmin;
+}
+
+.result {
+  margin-bottom: 2rem;
+  margin-left: 10px;
+}
+
+.result-header {
+    font-size: 20px;
+}
+
+.result-header--root {
+  font-weight: bold;
+}
+
+.result-body {
+  font-size: 16px;
+}
+
+.result-strongly-agree {
+  color: #33a474;
+  font-weight: bold;
+}
+
+.result-agree {
+  color: #33a474;
+}
+
+.result-neutral {
+  color: #9b9faa;
+  font-weight: bold;
+}
+
+.result-disagree {
+  color: #f03d3d;
+}
+
+.result-strongly-disagree {
+  color: #f03d3d;
+  font-weight: 700;
+}
+
+.result-value {
+  font-size: 18px;
+  font-weight: bold;
+}
