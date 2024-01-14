@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block content %}
+
+<div>
+  {% for q in questions %}
+  <div class="mb-5">
+    <h3 class="results-header">
+      <span class="results-header--root">Soru:</span>
+      <span class="">{{ q.question }}</span>
+    </h3>
+    <div>
+      <div>Bu soruya kesinlikle katılanların sayısı: {{ q.overall_strongly_agree_answers }}</div>
+      <div>Bu soruya katılanların sayısı: {{ q.overall_agree_answers }}</div>
+      <div>Bu soruya nötr olanların sayısı: {{ q.overall_neutral_answers }}</div>
+      <div>Bu soruya katılmayanların sayısı: {{ q.overall_disagree_answers }}</div>
+      <div>Bu soruya kesinlikle katılmayanların sayısı: {{q.overall_strongly_disagree_answers }}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
