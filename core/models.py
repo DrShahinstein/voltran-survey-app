@@ -20,5 +20,17 @@ class Question(models.Model):
         "Bu soruya kesinlikle katılmayanların sayısı", default=0
     )
 
+    @property
+    def total_votes_used(self):
+        return sum(
+            [
+                self.overall_strongly_agree_answers,
+                self.overall_agree_answers,
+                self.overall_neutral_answers,
+                self.overall_disagree_answers,
+                self.overall_strongly_disagree_answers,
+            ]
+        )
+
     def __str__(self):
         return self.question
