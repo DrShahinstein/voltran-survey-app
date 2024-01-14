@@ -1,29 +1,38 @@
 /* main.js */
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Take out the invisibility of the first question
-  document.querySelector("#question-0").classList.remove("d-none");
-
   // Management of radio buttons
   const radios = document.querySelectorAll(QUERY_RADIOS);
-  handleAvailableRadios(radios);
+  manageRadios(radios);
 });
 
-function handleAvailableRadios(radios) {
+function manageRadios(radios) {
   radios.forEach((radio) => {
     radio.addEventListener("click", () => {
       radios.forEach((otherRadio) => {
-        otherRadio.classList.remove(...Object.values(selectedClassMap));
+        otherRadio.classList.remove(...Object.values(RADIO_SELECTED_MAPPING));
       });
 
       radio.classList.add("radio-disabled");
 
-      for (const rType of radioTypes) {
+      const answer = expressAnswer(radio.classList);
+      document.getElementById(QUERY_INPUT_ANSWER).value = answer;
+
+      for (const rType of RADIO_TYPES) {
         if (radio.classList.contains(rType)) {
-          radio.classList.add(selectedClassMap[rType]);
+          radio.classList.add(RADIO_SELECTED_MAPPING[rType]);
           break;
         }
       }
     });
   });
+}
+
+function expressAnswer(radioClassList) {
+  for (const className of radioClassList) {
+    if (className in ANSWER_MAPPING) {
+      return ANSWER_MAPPING[className];
+    }
+  }
+  return "";
 }
