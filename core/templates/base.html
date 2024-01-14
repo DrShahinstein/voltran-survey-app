@@ -42,11 +42,10 @@
   </head>
   <body>
     {# initial html #}
-    <main>{% block index_content %} {% endblock %}</main>
+    <main>{% block content %} {% endblock %}</main>
 
     {# js #}
     <script src="{% static 'js/helpers.js' %}"></script>
-    <script src="{% static 'js/question-navigation.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
 
     {# icons #}
