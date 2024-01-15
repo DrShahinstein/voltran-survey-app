@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Question(models.Model):
-    question = models.CharField("Soru", max_length=80, default="your question")
+    question = models.CharField("Soru", max_length=125, default="your question")
 
     overall_strongly_agree_answers = models.IntegerField(
         "Bu soruya kesinlikle katılanların sayısı", default=0
