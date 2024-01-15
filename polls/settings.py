@@ -5,16 +5,16 @@ from decouple import config
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config("DJANGO_SECRET_KEY")
 DEBUG = config("DJANGO_DEBUG", cast=bool)
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["voltrananket.pythonanywhere.com"]
 ROOT_URLCONF = "polls.urls"
 WSGI_APPLICATION = "polls.wsgi.application"
 LANGUAGE_CODE = "en-us"
 TIME_ZONE = "UTC"
 USE_I18N = True
 USE_TZ = True
-STATIC_ROOT = "staticfiles"
-STATIC_URL = "static/"
-STATICFILES_DIRS = [BASE_DIR / "core" / "static", BASE_DIR / "public"]
+STATIC_ROOT = "staticfiles"  # django collected static
+STATIC_URL = "staticfiles/"  # django collected static
+STATICFILES_DIRS = [BASE_DIR / "core" / "static", BASE_DIR / "public"]  # self static
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 DATABASES = {
