@@ -17,11 +17,16 @@ a {
 
 .poll-container {
   min-width: 700px;
+  max-width: 950px;
   background-color: #fff;
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transform: scale(1.1);
+}
+
+.poll-container--title {
+  overflow-wrap: break-word;
 }
 
 @media only screen and (max-width: 1500px) {
