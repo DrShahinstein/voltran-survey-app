@@ -18,6 +18,8 @@ Make sure you have [python-poetry](https://python-poetry.org/) installed.
 
 ![preview](https://github.com/DrShahinstein/self-django-polls/assets/81323808/40a07dfb-679c-4350-ae64-6ee46ec711ab)
 
+![results](https://github.com/DrShahinstein/self-django-polls/assets/81323808/52abeed6-b339-4288-84cc-e0bf991f2c7c)
+
 ## Screenshots from the live survey out there in İzmir/Karşıyaka
 
 <img src="https://github.com/DrShahinstein/self-django-polls/assets/81323808/b60a009e-3f33-42b3-a4f0-987335601d71" width="300" />
