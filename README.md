@@ -1,6 +1,6 @@
 # Voltran Survey App
 
-A social survey app in which answers are based on [likert scale](https://www.scribbr.com/methodology/likert-scale/) (agree/disagree out of five). Primarily developed for [Team Voltran 2023](https://www.instagram.com/fll_voltran/) competing in the [First Lego League 2023 challenge](https://www.first-lego-league.org/en/2023-24-season/the-masterpiece-season). The event was made on Feb 02, 2024. Screenshots below!
+A social survey app in which answers are based on [likert scale](https://www.scribbr.com/methodology/likert-scale/) (agree/disagree out of five). Primarily developed for [Team Voltran 2023](https://www.instagram.com/fll_voltran/) competing in the [First Lego League 2023-2024 challenge](https://www.first-lego-league.org/en/2023-24-season/the-masterpiece-season). The event was made on Feb 02, 2024. Screenshots below!
 
 ## Local installation
 
