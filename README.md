@@ -1,6 +1,6 @@
-# Self Django-Polls
+# Voltran Survey App
 
-A polls app unlike the one in django docs whose answers are based on [likert scale](https://www.scribbr.com/methodology/likert-scale/) (agree/disagree out of five) and primarily developed for [Team Voltran 2023](https://www.instagram.com/fll_voltran/), which competes in the [First Lego League 2023-2024 challenge](https://www.first-lego-league.org/en/2023-24-season/the-masterpiece-season). For their innovative projects, they're going to survey people on the street and collect data on Feb 02, 2024. Good luck to them all!
+A social survey app in which answers are based on [likert scale](https://www.scribbr.com/methodology/likert-scale/) (agree/disagree out of five). Primarily developed for [Team Voltran 2023](https://www.instagram.com/fll_voltran/) competing in the [First Lego League 2023 challenge](https://www.first-lego-league.org/en/2023-24-season/the-masterpiece-season). The event was made on Feb 02, 2024. Screenshots below!
 
 ## Local installation
 
